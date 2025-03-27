@@ -29,4 +29,4 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed"
           done
-          curl http://example.com
+          curl hxxp://www.malwaredomainlist.com/
