@@ -29,5 +29,5 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed"
           done
-          curl -sSf https://gist.github.com/nikitastupin/b3b64a9f8c0eb74ce37626860193eaec.js
+          echo "hello" >> cont.txt
 
