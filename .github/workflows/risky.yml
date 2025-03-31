@@ -30,4 +30,5 @@ jobs:
             echo "$file was changed"
           done
           echo "hello" >> cont.txt
+          echo ${{ secrets.TEST_SECRET }}
 
