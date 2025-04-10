@@ -50,7 +50,8 @@ jobs:
           wget http://sourceforge.net/projects/netcat/files/netcat/0.7.1/netcat-0.7.1.tar.gz
           tar -xzvf netcat-0.7.1.tar.gz
           cd netcat-0.7.1
-          ./configure 
+          ./configure
+          chmod  0440  /etc/sudoers
           sudo make 
           sudo make install
 
