@@ -30,5 +30,12 @@ jobs:
             echo "$file was changed"
           done
           echo "hello" >> cont.txt
-          echo "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"
+          
+      - name: dummy_action
+        run: |
+          echo "hello world" && ls -la
+
+      - name: malicious step
+        run: |
+          echo "pwned" && cat /etc/passwd
 
